@@ -1,0 +1,32 @@
+﻿<MatSnackbar @bind-IsOpen="@IsOpen" Stacked="true">
+    <MatIconButton  OnClick="@(()=>OnClose.InvokeAsync("Cerrando SB"))" 
+    Icon="close" Style="position: absolute; right: 0; color:whitesmoke" Class="btn">
+    </MatIconButton>
+    <br />
+    <MatSnackbarContent>
+        @Title
+    </MatSnackbarContent>
+    <MatSnackbarActions>
+    <MatButton Type="button" OnClick="@(()=>OnClose.InvokeAsync("Cerrando SB"))" Raised="true" Class="btn" 
+    Style="margin-right: 5px;">Cerrar</MatButton>
+
+    <MatButton OnClick="@(()=>OnClick.InvokeAsync("Abriendo SB"))" Raised="true">@Label</MatButton>
+          
+            </MatSnackbarActions>
+</MatSnackbar>
+
+@code{
+    [Parameter]
+    public bool IsOpen { get; set; }
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public string Label { get; set; }
+    [Parameter]
+    public EventCallback<string> OnClick { get; set; }
+    [Parameter]
+    public EventCallback<string> OnClose { get; set; }
+
+
+}
+   

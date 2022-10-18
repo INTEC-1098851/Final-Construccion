@@ -1,0 +1,41 @@
+﻿@page "/inventories/categories"
+        @inject IMatDialogService MatDialogService
+
+<PageTitle>Categorias</PageTitle>
+  <MatButton Unelevated="true" OnClick="@(_ => ShowModalDialog())">Nuevo</MatButton>
+        <MatTable Items="@categories" LoadInitialData="true" Striped="true" AllowSelection="true" RowClass="tester"
+                   FilterByColumnName="Title" DebounceMilliseconds="150" class="mat-elevation-z5">
+            <MatTableHeader>
+                <th>Id</th>
+                <th>Nomenclatura</th>
+                <th>Nombre</th>
+            </MatTableHeader>
+            <MatTableRow>
+                <td>@String.Format("{0:d}", @context.Id)</td>
+                <td>@context.Key</td>
+                <td>@context.Name</td>
+            </MatTableRow>
+        </MatTable>
+      
+        <NewCategoryComponent ShowComponent="showModal"></NewCategoryComponent>
+        @code
+{
+    bool showModal = false;
+    void ShowModalDialog()
+    {
+        showModal = true;
+
+    }
+    public List<Category> categories = new()
+    {
+        new("CM","Camisas"),
+        new("PT","Pantalones"),
+        new("PS","Polo-Shirts"),
+        new("TS","T-Shirts"),
+    };
+    
+              async Task OpenPromptFromService()
+            {
+                var result = await MatDialogService.PromptAsync("What is your name?");
+            }
+        }

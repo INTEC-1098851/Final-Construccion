@@ -1,0 +1,135 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = BlazorAppOtus.Client
+build_property.RootNamespace = BlazorAppOtus.Client
+build_property.ProjectDir = C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Body/VCForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCb2R5XFZDRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Buttons/MenuButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCdXR0b25zXE1lbnVCdXR0b24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Layouts/ColumnGridComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRzXENvbHVtbkdyaWRDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Layouts/LayoutGridComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRzXExheW91dEdyaWRDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Loader/CircleSpinningLoader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMb2FkZXJcQ2lyY2xlU3Bpbm5pbmdMb2FkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Loader/LinearCircleLoader.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMb2FkZXJcTGluZWFyQ2lyY2xlTG9hZGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Modals/ConfirmDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNb2RhbHNcQ29uZmlybURpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Modals/ModalDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNb2RhbHNcTW9kYWxEaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Modals/SnackBar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNb2RhbHNcU25hY2tCYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Modals/Toast.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xNb2RhbHNcVG9hc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Navigator/NavigatorMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZpZ2F0b3JcTmF2aWdhdG9yTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Navigator/NavStep.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xOYXZpZ2F0b3JcTmF2U3RlcC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Tables/ViewTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJsZXNcVmlld1RhYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Components/Themes/Theme.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUaGVtZXNcVGhlbWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Controls/Inventory/NewCategoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3J5XE5ld0NhdGVnb3J5Q29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Controls/Inventory/NewInventoryComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3J5XE5ld0ludmVudG9yeUNvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Controls/Inventory/NewSizeComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udHJvbHNcSW52ZW50b3J5XE5ld1NpemVDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Pages/Inventories/CategoryList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcQ2F0ZWdvcnlMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Pages/Inventories/ProductList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcUHJvZHVjdExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Pages/Inventories/SizeList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3JpZXNcU2l6ZUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Pages/Invoices/NewInvoice.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52b2ljZXNcTmV3SW52b2ljZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-lcnc3cfudm
+
+[C:/Users/fsoto/Documents/BlazorAppOtus/BlazorAppOtus/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-1ucoqc9ui8

@@ -1,0 +1,69 @@
+﻿ <ModalDialog  IsOpen=@ShowComponent OnClose="@(() => CloseModal())"  >
+     <ModalBody>
+    <LayoutGridComponent>
+    <LayoutGridContent>
+        <ColumnGridComponent SpanSize=8>
+             <ColumnGridContent>
+                    <MatStringField 
+        @bind-Value="Model.Name" 
+        Type="text" 
+        FullWidth="true" 
+        TextArea="false" 
+        Box="true" 
+        PlaceHolder="Tamano"> 
+  </MatStringField>
+             </ColumnGridContent>
+         </ColumnGridComponent>
+          <ColumnGridComponent SpanSize="4">
+              <ColumnGridContent>
+                      <MatTextField @bind-Value="Model.Key" TValue="string" Label="Nomenclatura" ></MatTextField>
+     
+                  </ColumnGridContent>
+         </ColumnGridComponent>
+   </LayoutGridContent>
+ </LayoutGridComponent>
+     </ModalBody>
+     <ModalFooter>
+        <LayoutGridComponent HorizontalPosition="right">
+            <LayoutGridContent>
+                <ColumnGridComponent SpanSize="4" >
+                    <ColumnGridContent>
+                     <MatButton  OnClick="@(_ => CloseModal())">Cancelar</MatButton>
+                     </ColumnGridContent>
+                </ColumnGridComponent>
+                <ColumnGridComponent SpanSize="4">
+                    <ColumnGridContent>
+                     <MatButton OnClick="@(_ => Save())">Guardar</MatButton>
+                     </ColumnGridContent>
+                </ColumnGridComponent>
+            </LayoutGridContent>
+        </LayoutGridComponent>
+     </ModalFooter>
+ </ModalDialog> 
+
+
+
+@code {
+    [Parameter]
+    public bool ShowComponent { get; set; }
+    [Parameter]
+    public Size Model { get; set; } = new();
+    [Parameter]
+    public EventCallback<Size> OnSave { get; set; }
+    [Parameter]
+    public EventCallback OnClose { get; set; }
+
+    private void Save()
+    { 
+        OnSave.InvokeAsync(Model);  
+    }
+    private void CloseModal()
+    {
+        OnClose.InvokeAsync();
+    }
+
+    public NewSizeComponent()
+    {
+        Model = new();
+    }
+}

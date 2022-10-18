@@ -1,0 +1,45 @@
+﻿<MatDialog 
+    @ref="_dialog"
+    @bind-CanBeClosed="@CanBeClosed" 
+    IsOpen=@IsOpen
+    IsOpenChanged="@(()=>IsOpenChanged())"
+     Style="min-width:1000px">
+    
+    <MatDialogTitle>
+        <MatIconButton Type="button" OnClick="@(() => Close())" Class="btn"
+                       Icon="close" Style="position: absolute; right: 0;"></MatIconButton>
+        @ModalTitle
+    </MatDialogTitle>
+    <MatDialogContent>
+        @ModalBody
+    </MatDialogContent>
+    <MatDialogActions>
+        @ModalFooter
+    </MatDialogActions>
+
+</MatDialog>
+
+
+
+@code {
+    private MatDialog _dialog;
+    [Parameter]
+    public bool IsOpen{ get; set; }
+    [Parameter]
+    public bool CanBeClosed { get; set; } = true;
+    [Parameter]
+    public RenderFragment? ModalBody { get; set; }
+    [Parameter]
+    public RenderFragment? ModalFooter { get; set; }
+    [Parameter]
+    public RenderFragment? ModalTitle { get; set; }
+    [Parameter]
+    public EventCallback<bool> OnClose { get; set; }
+    void IsOpenChanged()
+    {
+        if (!_dialog.IsOpen)
+            Close();
+    }
+
+    void Close() => OnClose.InvokeAsync();
+}

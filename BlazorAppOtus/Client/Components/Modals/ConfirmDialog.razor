@@ -1,0 +1,55 @@
+﻿@inject IJSRuntime JS
+<MatDialog @bind-IsOpen="@IsConfirmed">
+    <MatDialogTitle>
+        <MatIconButton Type="button" OnClick="@(() => OnClose.InvokeAsync("cerrando"))" Class="btn"
+                       Icon="close" Style="position: absolute; right: 0;"></MatIconButton>
+        <br />
+        @ModalTitle
+    </MatDialogTitle>
+    <MatDialogContent>
+        @ModalBody
+    </MatDialogContent>
+    <MatDialogActions>
+        <Theme themeColor="Theme.ThemeColor.success">
+            <Body>
+                <MatButton OnClick="@(() => OnConfirm.InvokeAsync("cerrando"))" Style="margin-right:10px"
+                           Disabled="@(btnConfirm.isEnabled ? false : true)" Class="btn-lg" Unelevated="true"
+                           Type="@btnConfirm.attribute" Icon="@btnConfirm.icon">@btnConfirm.name</MatButton>
+            </Body>
+
+        </Theme>
+        <Theme themeColor="Theme.ThemeColor.danger">
+            <Body>
+                <MatButton OnClick="@(() => OnClose.InvokeAsync("Cerrando"))"
+                                   Disabled="@(btnCancel.isEnabled ? false : true)" Class="btn-lg" Unelevated="true"
+                                   Type="@btnCancel.attribute" Icon="@btnCancel.icon">@btnCancel.name</MatButton>
+            </Body>
+        </Theme>
+
+            @ModalFooter
+        </MatDialogActions>
+    </MatDialog>
+@code {
+    //Cerrar Modal
+    [Parameter]
+    public EventCallback<string> OnClose { get; set; }
+    [Parameter]
+    public EventCallback<string> OnConfirm { get; set; }
+    [Parameter]
+    public bool IsConfirmed { get; set; }
+    [Parameter]
+    public RenderFragment ModalBody { get; set; }
+    [Parameter]
+    public RenderFragment ModalFooter { get; set; }
+    [Parameter]
+    public RenderFragment ModalTitle { get; set; }
+    [Parameter]
+    public ConfirmationModelView ModelConfirmation { get; set; }
+    ButtonModelView btnCancel;
+    ButtonModelView btnConfirm;
+    protected override async Task OnInitializedAsync()
+    {
+        btnCancel = new ButtonModelView { attribute = "button", isEnabled = true, name = "Cancelar", icon = "cancel" };
+        btnConfirm = new ButtonModelView { attribute = "button", isEnabled = true, name = "Confirmar", icon = "done_outline" };
+    }
+}

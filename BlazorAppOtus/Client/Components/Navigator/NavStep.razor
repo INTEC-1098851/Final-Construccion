@@ -1,0 +1,23 @@
+﻿@*<li contenteditable="false" draggable="false"  role="tab" @onclick="(() => modelState())" 
+    class=" @model.Attribute @(model.isEnabled ? "" : "disabled") @(model.isCurrent ? "current" : "")">
+    <a> <span class="number"></span>@model.Id. @model.Name </a></li>*@
+@code {
+    //[Parameter]
+    //public NavStepModelView model { get; set; }
+    [Parameter]
+    public EventCallback<string> ChangeState { get; set; }
+    [Parameter]
+    public EventCallback<string> ButtonState { get; set; }
+
+
+    void modelState()
+    {
+        //if (model.isEnabled)
+        //{
+        //    ChangeState.InvokeAsync(model.Name);
+        //    model.isCurrent = true;
+        //    ButtonState.InvokeAsync("estado del boton");
+        //}
+    }
+
+}

@@ -1,0 +1,15 @@
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\bin\Debug\net6.0\BlazorAppOtus.Shared.deps.json
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\bin\Debug\net6.0\BlazorAppOtus.Shared.dll
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\bin\Debug\net6.0\BlazorAppOtus.Shared.pdb
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\bin\Debug\net6.0\GenericRepository.dll
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\bin\Debug\net6.0\GenericRepository.pdb
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\BlazorAppOtus.Shared.csproj.AssemblyReference.cache
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\BlazorAppOtus.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\BlazorAppOtus.Shared.AssemblyInfoInputs.cache
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\BlazorAppOtus.Shared.AssemblyInfo.cs
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\BlazorAppOtus.Shared.csproj.CoreCompileInputs.cache
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\BlazorAppOtus.Shared.csproj.CopyComplete
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\BlazorAppOtus.Shared.dll
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\refint\BlazorAppOtus.Shared.dll
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\BlazorAppOtus.Shared.pdb
+C:\Users\fsoto\Documents\BlazorAppOtus\BlazorAppOtus\Shared\obj\Debug\net6.0\ref\BlazorAppOtus.Shared.dll

@@ -1,0 +1,69 @@
+﻿@inject IMatToaster Toaster
+
+@code {
+    private bool _showProgressBar;
+    private string _maximumOpacity;
+    private string _showTransitionDuration;
+    private string _visibleStateDuration;
+    private string _hideTransitionDuration;
+    [Parameter]
+    public string Title { get; set; }
+    [Parameter]
+    public string Message { get; set; }
+    [Parameter]
+    public bool ShowCloseButton { get; set; } = true;
+    [Parameter]
+    public bool ActionClick { get; set; } = false;
+    [Parameter]
+    public bool Interaction { get; set; } = true;
+    [Parameter]
+    public MatToastType ToastType { get; set; }
+    [Parameter]
+    public string ToastPosition{ get; set; } = "BottomRight";
+    [Parameter]
+    public string ToastIcon { get; set; }
+    [Parameter]
+    public string MaxShow { get; set; } = "5";
+
+
+    protected override void OnInitialized()
+    {
+        _showProgressBar = Toaster.Configuration.ShowProgressBar;
+        _maximumOpacity = Toaster.Configuration.MaximumOpacity.ToString();
+        _showTransitionDuration = Toaster.Configuration.ShowTransitionDuration.ToString();
+        _visibleStateDuration = Toaster.Configuration.VisibleStateDuration.ToString();
+        _hideTransitionDuration = Toaster.Configuration.HideTransitionDuration.ToString();
+        Show(ToastType,ToastIcon);
+    }
+    protected override async Task OnParametersSetAsync()
+    {
+        Show(ToastType, ToastIcon);
+    }
+    public void Show(MatToastType type, string icon = "")
+    {
+        Toaster.Add(Message, type, Title, icon, config =>
+        {
+            config.ShowCloseButton = ShowCloseButton;
+            config.ShowProgressBar = _showProgressBar;
+            config.MaximumOpacity = Convert.ToInt32(_maximumOpacity);
+            Toaster.Configuration.Position = (MatToastPosition)Enum.Parse(typeof(MatToastPosition), ToastPosition);
+            Toaster.Configuration.MaxDisplayedToasts = Convert.ToInt32(MaxShow);
+            config.ShowTransitionDuration = Convert.ToInt32(_showTransitionDuration);
+            config.VisibleStateDuration = Convert.ToInt32(_visibleStateDuration);
+            config.HideTransitionDuration = Convert.ToInt32(_hideTransitionDuration);
+
+            config.RequireInteraction = Interaction;
+
+            if (ActionClick)
+            {
+                config.Onclick = toast =>
+                {
+                    Console.WriteLine($"Title: \"{toast.Title}\"; message: \"{toast.Message}\"; Type: {toast.Options.Type}");
+                    return Task.CompletedTask;
+                };
+            }
+        });
+    }
+
+}
+

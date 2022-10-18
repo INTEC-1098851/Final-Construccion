@@ -1,0 +1,27 @@
+﻿<div class="col-md-12">
+    <form action="#" id="step-form-horizontal" class="step-form-horizontal">
+        <div role="application" class="wizard clearfix">
+            <div class="steps clearfix">
+                <ul role="tablist">
+                    @*@foreach(var steps in ListaSteps)
+                    {
+                        <NavStep model="steps"  ButtonState="@ButtonState" 
+                                 ChangeState="@ChangeState" ></NavStep>
+                    }*@
+                </ul>
+            </div>
+        </div>
+    </form>
+</div>
+@code {
+    //[Parameter]
+    //public List<NavStepModelView> ListaSteps { get; set; }
+    [Parameter]
+    public EventCallback<string> ChangeState { get; set; }
+    [Parameter]
+    public EventCallback<string> ButtonState { get; set; }
+
+}
+
+
+

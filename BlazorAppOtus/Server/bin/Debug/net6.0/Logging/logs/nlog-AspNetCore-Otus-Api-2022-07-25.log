@@ -1,0 +1,5 @@
+2022-07-25 22:11:10.3232|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: https://[::]:443 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync| body: 
+2022-07-25 22:11:10.4051|0|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:80 |url: |action: |Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync| body: 
+2022-07-25 22:11:10.4139|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted| body: 
+2022-07-25 22:11:10.4187|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted| body: 
+2022-07-25 22:11:10.4187|0|INFO|Microsoft.Hosting.Lifetime|Content root path: /app/ |url: |action: |Microsoft.Extensions.Hosting.Internal.ConsoleLifetime.OnApplicationStarted| body: 

@@ -1,0 +1,16 @@
+﻿@inject IJSRuntime _JS
+<article class="tile" @onclick="test">
+    <div class="tile-icon full-reset"><MatIcon Icon="@Icon" /></div>
+    <div class="tile-name all-tittles">@Name</div>
+    <div class="tile-num full-reset">10</div>
+</article>
+@code {
+    [Parameter]
+    public string Icon { get; set; }
+    [Parameter]
+    public string Name { get; set; }
+    public async Task test()
+    {
+      
+    }
+}

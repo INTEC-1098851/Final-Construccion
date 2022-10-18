@@ -1,0 +1,14 @@
+﻿<div class="mat-layout-grid mat-layout-grid-cell-align-@VerticalPosition
+            mat-layout-grid-align-@HorizontalPosition">
+            <div class="mat-layout-grid-inner ">
+                @LayoutGridContent
+            </div>
+            </div>
+@code {
+    [Parameter]
+    public RenderFragment LayoutGridContent { get; set; }
+        [Parameter]
+    public string VerticalPosition { get; set; } = "middle";
+    [Parameter]
+    public string HorizontalPosition { get; set; } = "left";
+}

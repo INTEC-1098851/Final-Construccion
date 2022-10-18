@@ -1,0 +1,59 @@
+﻿ <ModalDialog IsOpen="ShowComponent"  >
+     <ModalBody>
+    <LayoutGridComponent>
+    <LayoutGridContent>
+        <ColumnGridComponent SpanSize=8>
+             <ColumnGridContent>
+                    <MatStringField 
+        @bind-Value="item.Name" 
+        Type="text" 
+        FullWidth="true" 
+        TextArea="false" 
+        Box="true" 
+        PlaceHolder="Categoria"> 
+  </MatStringField>
+             </ColumnGridContent>
+         </ColumnGridComponent>
+          <ColumnGridComponent SpanSize="4">
+              <ColumnGridContent>
+                      <MatTextField @bind-Value="item.Key" TValue="string" Label="Nomenclatura" ></MatTextField>
+     
+                  </ColumnGridContent>
+         </ColumnGridComponent>
+   </LayoutGridContent>
+ </LayoutGridComponent>
+     </ModalBody>
+     <ModalFooter>
+        <LayoutGridComponent HorizontalPosition="right">
+            <LayoutGridContent>
+                <ColumnGridComponent SpanSize="4" >
+                    <ColumnGridContent>
+                     <MatButton >Cancelar</MatButton>
+                     </ColumnGridContent>
+                </ColumnGridComponent>
+                <ColumnGridComponent SpanSize="4">
+                    <ColumnGridContent>
+                     <MatButton >Guardar</MatButton>
+                     </ColumnGridContent>
+                </ColumnGridComponent>
+            </LayoutGridContent>
+        </LayoutGridComponent>
+     </ModalFooter>
+ </ModalDialog> 
+
+
+@code {
+    [Parameter]
+    public bool ShowComponent { get; set; }
+
+    [Parameter]
+    public Category item { get; set; }
+
+     string name = null;
+            string animal = null;
+            string dialogAnimal = null;
+    public NewCategoryComponent()
+    {
+        item = new();
+    }
+}

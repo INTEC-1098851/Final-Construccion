@@ -1,0 +1,879 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Server\\BlazorAppOtus.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Client\\BlazorAppOtus.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Client\\BlazorAppOtus.Client.csproj",
+        "projectName": "BlazorAppOtus.Client",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Client\\BlazorAppOtus.Client.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpRequestHandler\\GenericHttpRequestHandler.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpRequestHandler\\GenericHttpRequestHandler.csproj"
+              },
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj"
+              },
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Shared\\BlazorAppOtus.Shared.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Shared\\BlazorAppOtus.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MatBlazor": {
+              "target": "Package",
+              "version": "[2.8.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[6.0.5, 6.0.5]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpRequestHandler\\GenericHttpRequestHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpRequestHandler\\GenericHttpRequestHandler.csproj",
+        "projectName": "GenericHttpRequestHandler",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpRequestHandler\\GenericHttpRequestHandler.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpRequestHandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpResponseHandler\\GenericHttpResponseHandler.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpResponseHandler\\GenericHttpResponseHandler.csproj",
+        "projectName": "GenericHttpResponseHandler",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpResponseHandler\\GenericHttpResponseHandler.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpResponseHandler\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\GenericRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\GenericRepository.csproj",
+        "projectName": "GenericRepository",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\GenericRepository.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\LoggerService\\LoggerService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\LoggerService\\LoggerService.csproj",
+        "projectName": "LoggerService",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\LoggerService\\LoggerService.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\LoggerService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.EventLog": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.EventSource": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\MailService\\MailService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\MailService\\MailService.csproj",
+        "projectName": "MailService",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\MailService\\MailService.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\MailService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\GenericRepository.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\GenericRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Server\\BlazorAppOtus.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Server\\BlazorAppOtus.Server.csproj",
+        "projectName": "BlazorAppOtus.Server",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Server\\BlazorAppOtus.Server.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Client\\BlazorAppOtus.Client.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Client\\BlazorAppOtus.Client.csproj"
+              },
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\MailService\\MailService.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\MailService\\MailService.csproj"
+              },
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj"
+              },
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedResources\\SharedResources.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedResources\\SharedResources.csproj"
+              },
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Shared\\BlazorAppOtus.Shared.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Shared\\BlazorAppOtus.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.15.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj",
+        "projectName": "SharedModels",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\GenericRepository.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\GenericRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedResources\\SharedResources.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedResources\\SharedResources.csproj",
+        "projectName": "SharedResources",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedResources\\SharedResources.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedResources\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpResponseHandler\\GenericHttpResponseHandler.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericHttpResponseHandler\\GenericHttpResponseHandler.csproj"
+              },
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\LoggerService\\LoggerService.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\LoggerService\\LoggerService.csproj"
+              },
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\SharedModels\\SharedModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "GemBox.Spreadsheet": {
+              "target": "Package",
+              "version": "[49.0.1067, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MimeTypeMapOfficial": {
+              "target": "Package",
+              "version": "[1.0.17, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Shared\\BlazorAppOtus.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Shared\\BlazorAppOtus.Shared.csproj",
+        "projectName": "BlazorAppOtus.Shared",
+        "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Shared\\BlazorAppOtus.Shared.csproj",
+        "packagesPath": "C:\\Users\\fsoto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\fsoto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/BONAAPP/_packaging/BonaApp/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/DevSharedProjects/_packaging/DevSharedProjects/nuget/v3/index.json": {},
+          "https://pkgs.dev.azure.com/ELCATADORAPP/_packaging/ELCATADORAPP/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\GenericRepository.csproj": {
+                "projectPath": "C:\\Users\\fsoto\\Documents\\BlazorAppOtus\\BlazorAppOtus\\GenericRepository\\GenericRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

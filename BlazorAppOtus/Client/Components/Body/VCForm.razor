@@ -1,0 +1,28 @@
+﻿<form action="#" id="step-form-horizontal" class="step-form-horizontal" novalidate="novalidate">
+    <div role="application" class="wizard clearfix" id="steps-uid-0">
+
+        <div class="content clearfix">
+            <section role="tabpanel" class="body current" style="left: 0px;">
+                @FormBody
+                <p></p>
+                <p></p>
+            </section>
+        </div>
+        <div class="actions clearfix">
+
+            @FormFooter
+            <ul role="menu" aria-label="Pagination">
+                @Buttons
+            </ul>
+        </div>
+    </div>
+</form>
+@code {
+    [Parameter]
+    public RenderFragment FormBody { get; set; }
+    [Parameter]
+    public RenderFragment Buttons { get; set; }
+    [Parameter]
+    public RenderFragment FormFooter { get; set; }
+    
+}

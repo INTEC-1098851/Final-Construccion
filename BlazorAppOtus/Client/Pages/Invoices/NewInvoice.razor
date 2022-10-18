@@ -1,0 +1,186 @@
+﻿@page "/invoices/new"
+   @inject IMatDialogService _matDialogService
+   @inject IInvoiceService _invoiceService;
+@inject IJSRuntime jsRuntime
+
+<PageTitle>Generar Factura</PageTitle>
+<EditForm Context="model" Model="invoice" OnValidSubmit="SendInvoice">
+    <DataAnnotationsValidator/>
+ <LayoutGridComponent>
+    <LayoutGridContent>
+        <ColumnGridComponent SpanSize=4>
+             <ColumnGridContent>
+                 <MatTextField 
+                     Class="w-100" 
+                     @bind-Value="@invoice.CustomerName" 
+                     Label="Nombre del cliente"  
+                     Icon="person"  
+                     Outlined="true" 
+                     Required=true
+                 ></MatTextField>
+             @*<ValidationMessage For="@(() => invoice.CustomerName)"/>*@
+             </ColumnGridContent>
+         </ColumnGridComponent>
+          <ColumnGridComponent SpanSize="4">
+              <ColumnGridContent>
+                         <MatTextField  Class="w-100" @bind-Value="@invoice.CustomerPhone" Label="Teléfono del cliente"  Icon="phone_iphone"  Outlined="true" ></MatTextField>
+                     </ColumnGridContent>
+         </ColumnGridComponent>
+          <ColumnGridComponent SpanSize="4">
+              <ColumnGridContent>
+                         <MatTextField Type="Email"  Class="w-100" @bind-Value="@invoice.CustomerEmail" Label="Correo del cliente"  Icon="mail_outline"  Outlined="true"  Required=true></MatTextField>
+                         @*<ValidationMessage For="@(() => invoice.CustomerEmail)"/>*@
+                     </ColumnGridContent>
+         </ColumnGridComponent>
+   </LayoutGridContent>
+ </LayoutGridComponent>
+
+        <MatTable ShowFooter=false Items="@invoice.Details" LoadInitialData="true" Striped="true" AllowSelection="true" RowClass="tester"
+                Context="detail"    DebounceMilliseconds="150" class="mat-elevation-z5">
+            <MatTableHeader>
+                    <th style="min-width:30%">Descripción</th>
+                <th style="min-width:15%">Cantidad</th>
+                <th style="min-width:25%">Precio</th>
+                <th style="min-width:25%">Descuento</th>
+                <th style="min-width:5%">SubTotal</th>
+                <th style="min-width:15%">  
+                    <MatTooltip Context="tooltip" Tooltip="Nueva línea de detalle">
+                      <MatButton Type="Button" RefBack="@tooltip" Unelevated="true" OnClick="AddDetail">
+                            <MatIcon  Icon="add"></MatIcon>
+                        </MatButton>
+                    </MatTooltip> 
+                </th>
+            </MatTableHeader>
+            <MatTableRow>
+                <td>
+                    <MatStringField 
+        @bind-Value="@detail.Description" 
+        Type="text" 
+        FullWidth="true" 
+        TextArea="false" 
+        Box="true" 
+        PlaceHolder=""
+
+        Required=true
+                    >
+          </MatStringField>
+                </td>
+                <td>   <MatNumericUpDownField
+                    TValue="int"
+                                   @bind-Value=@detail.Quantity
+                                   DecimalPlaces=0
+                                     Required=true
+                                   Minimum=0>
+            </MatNumericUpDownField></td>
+               <td>  <MatNumericUpDownField
+                                    Format="C"
+                                   @bind-Value=@detail.UnitPrice
+                                   FieldType="MatNumericUpDownFieldType.Currency"
+                                   TValue="double"
+                                     Required=true
+                                   DecimalPlaces=2>
+            </MatNumericUpDownField></td>
+            <td>  <MatNumericUpDownField
+                                    Format="C"
+                                   @bind-Value=@detail.Discount
+                                   FieldType="MatNumericUpDownFieldType.Currency"
+                                   TValue="double"
+                                   DecimalPlaces=2>
+            </MatNumericUpDownField></td>
+             <td>@detail.Total.ToString("C")</td>
+              <td>
+                  <Theme Color="Theme.ThemeColor.Danger">
+                        <MatTooltip Context="tooltip" Tooltip="Eliminar línea">
+
+                      <MatButton Type="Button" RefBack="@tooltip" Unelevated="true" OnClick="@(_ => DeleteDetail(@detail))">
+                            <MatIcon  Icon="delete"></MatIcon>
+                        </MatButton>
+                    </MatTooltip> 
+                  </Theme>
+                 
+                </td>
+               
+            </MatTableRow>
+  
+        </MatTable>
+    <LayoutGridComponent>
+    <LayoutGridContent >
+           <ColumnGridComponent SpanSize="12" HorizontalPosition="right" >
+             <ColumnGridContent >
+                    <Theme Color="Theme.ThemeColor.Info">
+      <MatButton Unelevated=true Raised=true Type="Button" OnClick="ResetModel">Limpiar campos</MatButton>
+      </Theme>
+        <Theme Color="Theme.ThemeColor.Success">
+       <MatButton Unelevated=true Raised=true Type="Submit">Enviar Factura</MatButton>
+       </Theme>
+             </ColumnGridContent>
+         </ColumnGridComponent>
+
+     
+   </LayoutGridContent>
+ </LayoutGridComponent>
+   
+      
+</EditForm>
+        @code
+{
+
+    async Task ResetModel()
+    {
+        var result =  await _matDialogService.ConfirmAsync("¿Desea limpiar todos los campos? Los datos ingresados no podrán ser recuperados");
+        if (result)
+        {
+            invoice = new()
+            {
+                Details=new(){new()}
+            };
+        }
+    }
+    async Task SendInvoice()
+    {
+        var sendConfirm =  await _matDialogService.ConfirmAsync($"¿Desea enviar esta factura?");
+        if (sendConfirm)
+        {
+            var result =await _invoiceService.SendInvoice(invoice);
+            if (result.IsSuccessStatusCode)
+            {
+                  var response =  await _matDialogService.ConfirmAsync($"Factura {result.Data.FirstOrDefault()?.InvoiceNumber} enviada. ¿Desea descargarla?");
+        if (response)
+        {
+          await jsRuntime.InvokeAsync<object>("open", result.Data.FirstOrDefault()?.FileUrl, "_blank");
+        }
+            }
+            else{
+                  await _matDialogService.AlertAsync(result.Errors.FirstOrDefault()?.Message);
+            }
+          
+        }
+       
+
+    }
+    void AddDetail()
+    {
+        invoice.Details.Add(new());
+    }
+    async Task DeleteDetail(InvoiceDetail detail)
+    {
+        var result =  await _matDialogService.ConfirmAsync("¿Desea eliminar esta línea de detalle?");
+        if (result)
+        {
+            var model = invoice.Details.FirstOrDefault(x => x==detail);
+            if(model != null)
+            {
+                invoice.Details.Remove(model);
+                await _matDialogService.AlertAsync("Línea de detalle eliminada");
+            }
+
+        }
+
+    }
+    public Invoice invoice = new()
+        {
+            Details = new() { new()
+            }
+    };
+   
+        }

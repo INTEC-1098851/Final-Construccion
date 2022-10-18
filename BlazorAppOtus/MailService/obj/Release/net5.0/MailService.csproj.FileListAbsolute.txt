@@ -1,0 +1,15 @@
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\bin\Release\net5.0\MailService.deps.json
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\bin\Release\net5.0\MailService.dll
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\bin\Release\net5.0\ref\MailService.dll
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\bin\Release\net5.0\MailService.pdb
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\bin\Release\net5.0\GenericRepository.dll
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\bin\Release\net5.0\GenericRepository.pdb
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\obj\Release\net5.0\MailService.csprojAssemblyReference.cache
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\obj\Release\net5.0\MailService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\obj\Release\net5.0\MailService.AssemblyInfoInputs.cache
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\obj\Release\net5.0\MailService.AssemblyInfo.cs
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\obj\Release\net5.0\MailService.csproj.CoreCompileInputs.cache
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\obj\Release\net5.0\MailService.csproj.CopyComplete
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\obj\Release\net5.0\MailService.dll
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\obj\Release\net5.0\ref\MailService.dll
+C:\Users\fsoto\source\repos\DevOps\IHBona\MailService\obj\Release\net5.0\MailService.pdb

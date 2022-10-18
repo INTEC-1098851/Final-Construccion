@@ -1,0 +1,105 @@
+﻿ <ModalDialog IsOpen="ShowComponent"  >
+     <ModalBody>
+    <LayoutGridComponent>
+    <LayoutGridContent>
+        <ColumnGridComponent SpanSize=12>
+             <ColumnGridContent>
+                    <MatStringField 
+        @bind-Value="item.Name" 
+        Type="text" 
+        FullWidth="true" 
+        TextArea="false" 
+        Box="true" 
+        PlaceHolder="Articulo"> 
+  </MatStringField>
+             </ColumnGridContent>
+         </ColumnGridComponent>
+ 
+         <ColumnGridComponent SpanSize="6">
+             <ColumnGridContent>
+                <MatSelect TValue="string" Label="Categoria"
+         FullWidth="false">
+                    <MatOptionString >SELECCIONE</MatOptionString>
+                    <MatOptionString Value=1>Camisas</MatOptionString>
+                    <MatOptionString Value=2>Pantalones</MatOptionString>
+                    <MatOptionString Value=3>Gorras</MatOptionString>
+                    <MatOptionString Value=4>T-Shirts</MatOptionString>
+                    <MatOptionString Value=5>Polo-Shirt</MatOptionString>
+                </MatSelect>
+                </ColumnGridContent>
+         </ColumnGridComponent>
+        
+        <ColumnGridComponent SpanSize="6">
+                <ColumnGridContent>
+              <MatSelect TValue="string" Label="Size"
+                    FullWidth="false">
+                    <MatOptionString >SELECCIONE</MatOptionString>
+                    <MatOptionString Value=1>XS</MatOptionString>
+                    <MatOptionString Value=2>S</MatOptionString>
+                    <MatOptionString Value=3>M</MatOptionString>
+                    <MatOptionString Value=4>L</MatOptionString>
+                    <MatOptionString Value=5>XL</MatOptionString>
+                </MatSelect>
+                </ColumnGridContent>
+         </ColumnGridComponent>
+         <ColumnGridComponent SpanSize="6">
+              <ColumnGridContent>
+                      <MatTextField @bind-Value="item.UnitCost" TValue="double" Label="Costo" ></MatTextField>
+     
+                  </ColumnGridContent>
+         </ColumnGridComponent>
+          <ColumnGridComponent SpanSize="6">
+              <ColumnGridContent>
+                      <MatTextField @bind-Value="item.UnitPrice" TValue="double" Label="Precio" ></MatTextField>
+     
+                  </ColumnGridContent>
+         </ColumnGridComponent>
+         <ColumnGridComponent SpanSize="12">
+             <ColumnGridContent>
+                 <MatStringField 
+        @bind-Value="item.Description" 
+        Type="text" 
+        FullWidth="true" 
+        TextArea="true" 
+        Box="true" 
+        PlaceHolder="Descripcion breve"> 
+ </MatStringField>
+ </ColumnGridContent>
+         </ColumnGridComponent>
+   </LayoutGridContent>
+ </LayoutGridComponent>
+     </ModalBody>
+     <ModalFooter>
+        <LayoutGridComponent HorizontalPosition="right">
+            <LayoutGridContent>
+                <ColumnGridComponent SpanSize="4" >
+                    <ColumnGridContent>
+                     <MatButton >Cancelar</MatButton>
+                     </ColumnGridContent>
+                </ColumnGridComponent>
+                <ColumnGridComponent SpanSize="4">
+                    <ColumnGridContent>
+                     <MatButton >Guardar</MatButton>
+                     </ColumnGridContent>
+                </ColumnGridComponent>
+            </LayoutGridContent>
+        </LayoutGridComponent>
+     </ModalFooter>
+ </ModalDialog> 
+
+
+@code {
+    [Parameter]
+    public bool ShowComponent { get; set; }
+
+    [Parameter]
+    public Item item { get; set; }
+
+     string name = null;
+            string animal = null;
+            string dialogAnimal = null;
+    public NewInventoryComponent()
+    {
+        item = new();
+    }
+}

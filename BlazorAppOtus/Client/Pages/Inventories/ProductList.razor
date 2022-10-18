@@ -1,0 +1,46 @@
+﻿@page "/inventories/products"
+        @inject IMatDialogService MatDialogService
+
+<PageTitle>Productos</PageTitle>
+  <MatButton Unelevated="true" OnClick="@(_ => ShowModalDialog())">Nuevo</MatButton>
+        <MatTable Items="@todos" LoadInitialData="true" Striped="true" RequestApiOnlyOnce="true" AllowSelection="true" RowClass="tester"
+                  ApiUrl="https://jsonplaceholder.typicode.com/todos" FilterByColumnName="Title" DebounceMilliseconds="150" class="mat-elevation-z5">
+            <MatTableHeader>
+                <th>Id</th>
+                <th>Completed</th>
+                <th>Todo</th>
+            </MatTableHeader>
+            <MatTableRow>
+                <td>@String.Format("{0:d}", @context.Id)</td>
+                <td>@context.Completed</td>
+                <td>@context.Title</td>
+            </MatTableRow>
+        </MatTable>
+      
+        <NewInventoryComponent ShowComponent="showModal"></NewInventoryComponent>
+        @code
+{
+    bool showModal = false;
+    void ShowModalDialog()
+    {
+        showModal = true;
+
+    }
+    public class Todo
+            {
+                public int UserId { get; set; }
+                public int Id { get; set; }
+                public string Title { get; set; }
+                public bool Completed { get; set; }
+ 
+                public Todo()
+                {
+                }
+            }
+ 
+            Todo[] todos;
+              async Task OpenPromptFromService()
+            {
+                var result = await MatDialogService.PromptAsync("What is your name?");
+            }
+        }

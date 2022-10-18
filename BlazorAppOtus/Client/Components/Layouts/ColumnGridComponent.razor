@@ -1,0 +1,12 @@
+﻿   <div class="mat-layout-grid-cell mat-layout-grid-cell-span-@SpanSize mat-layout-grid-align-@HorizontalPosition">
+       @ColumnGridContent
+   </div>
+@code {
+    [Parameter]
+    public int SpanSize { get; set; } = 4;
+       [Parameter]
+    public string HorizontalPosition { get; set; } = "left";
+
+    [Parameter]
+    public RenderFragment ColumnGridContent { get; set; }
+}

@@ -1,0 +1,79 @@
+﻿@page "/inventories/sizes"
+        @inject IMatDialogService MatDialogService
+
+<PageTitle>Tamanos</PageTitle>
+        <MatTable Items="@sizes" LoadInitialData="true" Striped="true" AllowSelection="true" RowClass="tester"
+                   FilterByColumnName="Title" DebounceMilliseconds="150" class="mat-elevation-z5">
+            <MatTableHeader>
+                <th>Id</th>
+                <th>Nomenclatura</th>
+                <th>Nombre</th>
+                <th>Opciones</th>
+            </MatTableHeader>
+            <MatTableRow>
+                <td>@String.Format("{0:d}", @context.Id)</td>
+                <td>@context.Key</td>
+                <td>@context.Name</td>
+                <td>
+                    <MatButton OnClick="@(_ => EditSize(@context.Id))">Editar</MatButton>
+                <MatButton OnClick="@(_ => DeleteSize(@context.Id))">Borrar</MatButton>    
+                </td>
+            </MatTableRow>
+        </MatTable>
+      
+        <NewSizeComponent Model="model" OnSave="SaveInventory" OnClose="closeModal" ShowComponent="showModal"></NewSizeComponent>
+
+        @code
+{
+
+    void closeModal()
+    {
+        showModal = false;
+    }
+    
+    bool showModal = false;
+    void CreateSize()
+    {
+        showModal = true;
+        model = new();
+    }
+    void EditSize(int id)
+    {
+        showModal = true;
+        model = sizes.FirstOrDefault(x => x.Id == id);
+    }
+    async Task DeleteSize(int id)
+    {
+        var result =  await MatDialogService.ConfirmAsync("Eliminar tamano");
+        if (result)
+        {
+                 model = sizes.FirstOrDefault(x => x.Id == id);
+        sizes.Remove(model);
+        }
+   
+    }
+    Size model = new();
+
+    public void SaveInventory(Size size)
+    {
+        if (size.Id == 0)
+        {
+            sizes.Add(size);
+
+        }
+        else
+        {
+            var index =sizes.FindIndex(x=>x.Id==size.Id);
+            sizes[index] = size;
+        }
+                   showModal = false;
+    }
+    public List<Size> sizes= new()
+    {
+        new(1,"XS","Xtra-Small"),
+        new(2,"S","Small"),
+        new(3,"M","Medium"),
+        new(4,"L","Large")
+    };
+       
+        }
